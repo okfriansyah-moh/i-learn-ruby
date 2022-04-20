@@ -24,3 +24,22 @@ puts
 5.times { |count| puts "This is #{count}" }
 puts
 10.times { |count| puts "multiplies 3 at #{count + 1} = #{(count + 1) * 3}" }
+puts
+## Down to method
+5.downto(1) { |count| puts "countdown #{count}"}
+puts
+5.downto(0) do |current_number|
+  puts "We are currently on #{current_number}"
+  puts 'Hooray !'
+end
+
+puts 'LIFTOFF!'
+
+puts
+
+5.upto(7) {|count| puts "From 5 to #{count}"}
+puts
+5.upto(10) do |num|
+  puts "We are moving up"
+  puts "We are currently on #{num}"
+end
