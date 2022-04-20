@@ -40,6 +40,11 @@ puts
 5.upto(7) {|count| puts "From 5 to #{count}"}
 puts
 5.upto(10) do |num|
-  puts "We are moving up"
+  puts 'We are moving up'
   puts "We are currently on #{num}"
 end
+puts
+# step method
+0.step(5, 1) { |count| puts count }
+# arti step method diatas itu dari 0 step ke 5 dengan increment 1
+
