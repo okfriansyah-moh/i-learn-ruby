@@ -16,3 +16,7 @@ p "In five years, I will be #{age + 5}"
 x = 5
 y = 8
 p "The sum of x and y is #{x + y}"
+
+name = String.new('Boris')
+p name
+puts
