@@ -86,3 +86,41 @@ p thing
 
 thing[2..5] = "absolutely adore"
 p thing
+puts
+puts "hello".capitalize
+
+p "boRiS".swapcase
+puts
+
+puts "brandNew".upcase.reverse.downcase
+puts
+
+# bang method has a side effect, usually modify or mutate the original var
+word = "hello"
+word = word.capitalize
+puts word
+word.capitalize! # does not need to reassign
+puts word
+
+words = "hello"
+words.upcase!
+puts words
+puts
+# bang method = !
+
+# include method is to check if the input correlates to our var
+name = "Snow white"
+puts name.include?("w")
+puts
+
+p "".empty?
+p "content".empty?
+p "content".length == 0
+p "content".nil?
+
+# where nil? checking can be use
+puts
+names = "Donald Duck"
+last_names = names[100, 4]
+p last_names
+p last_names.nil?
